@@ -8,7 +8,7 @@ var playerMoney = 10;
 
 console.log(playerName, playerAttack, playerHealth);
 
-var enemyName = "Roborto";
+var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
 var enemyHealth = 50;
 var enemyAttack = 12;
 
@@ -42,7 +42,7 @@ if (promptFight === "fight" || promptFight === "FIGHT") {
 else if (promptFight === "skip" || promptFight === "SKIP") {
     var confirmSkip = window.confirm("Are you sure you'd like to quit?");
     if (confirmSkip) {
-        window.alert(playerName + "has decided to skip this fight. Goodbye!");
+        window.alert(playerName + " has decided to skip this fight. Goodbye!");
         playerMoney = playerMoney - 2;
     }
     else {
